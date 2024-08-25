@@ -1,6 +1,6 @@
 Código postado tem a finalidade de atender os requisitos solicitados Desvendando o Código Secreto da Polkadot;
 
-O código em pyton se inicia solicitando um numero ao usuario (função solicita_numero()) dentro da função verifico se o usuario solicitou um numero valido se não for valido repito a solicitação. O segundo momneto
+O código em pyton se inicia solicitando um numero ao usuario (função solicita_numero()) dentro da função verifico se o usuario solicitou um numero valido se não for valido repito a solicitação. O segundo momento
 solicito o segundo numero ao usuario utilizando a mesma função solicita_numero() fazendo a mesma validação do número;
 Na sequencia a função "intervalo_valido" é chamada nela garanto que o primeiro numero seja menor ou igual ao segundo numero informado pelo usuario;
 Se intervalo informado pelo usuario atende o esperado chamo a função percorrer_numeros, nessa função percorro atraves de um for do primeiro numero informado ate
