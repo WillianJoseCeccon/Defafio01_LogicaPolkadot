@@ -1,4 +1,4 @@
- #Desvendando o Código Secreto da Polkadot
+#Desvendando o Código Secreto da Polkadot
  #1. Dado um intervalo de números inteiros, você deverá percorrer todos os números desse intervalo.
  #2. Se um número for múltiplo de 3, ele deverá ser somado ao total.
  #3. Se um número for múltiplo de 5, ele deverá ser subtraído do total.
@@ -43,19 +43,20 @@ def intervalo_valido(inicio, fim):
   else:
     return False
 
+def buscaCodigoSecretoPolkadot():
+  codigoSecretoPolkadot = None
+  numero_01 = None
+  numero_02 = None
+  numero_01 = solicita_numero()
+  numero_02 = solicita_numero()
+  intervalo = intervalo_valido(numero_01, numero_02)
+  if intervalo :
+    codigoSecretoPolkadot = percorrer_numeros(numero_01,numero_02 )
 
-# Exemplo de uso da função
-codigoSecretoPolkadot = None
-numero_01 = None
-numero_02 = None
-numero_01 = solicita_numero()
-numero_02 = solicita_numero()
-intervalo = intervalo_valido(numero_01, numero_02)
-if intervalo :
-  codigoSecretoPolkadot = percorrer_numeros(numero_01,numero_02 )
+  if codigoSecretoPolkadot is not None:
+    print(f"O Código Secreto da Polkadot é: {codigoSecretoPolkadot}")
+  else:
+    print("O Código Secreto da Polkadot não foi possível ser encontrado.")
 
-if codigoSecretoPolkadot is not None:
-  print(f"O Código Secreto da Polkadot é: {codigoSecretoPolkadot}")
-else:
-  print("O Código Secreto da Polkadot não foi possível ser encontrado.")
 
+buscaCodigoSecretoPolkadot()
